@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Online | Mis Juegos</title>
+    <style>
+        body { background: #0f0f0f; color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 20px; text-align: center; }
+        h1 { color: #ffcb05; text-shadow: 2px 2px #3b4cca; margin-bottom: 10px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+        
+        .card { 
+            background: #1a1a1a; border-radius: 15px; padding: 30px; cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s; border: 2px solid transparent;
+        }
+        .card:hover { transform: translateY(-10px); }
+        
+        /* Colores por juego al pasar el mouse */
+        .ruby:hover { border-color: #e63946; box-shadow: 0 0 20px #e63946; }
+        .emerald:hover { border-color: #55a630; box-shadow: 0 0 20px #55a630; }
+        .firered:hover { border-color: #fb5607; box-shadow: 0 0 20px #fb5607; }
+        .leafgreen:hover { border-color: #70e000; box-shadow: 0 0 20px #70e000; }
+
+        .emoji { font-size: 40px; display: block; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Centro de Juegos Pokémon</h1>
+    <p>Selecciona tu aventura</p>
+
+    <div class="grid">
+        <div class="card ruby" onclick="location.href='jugar.html?game=ruby'">
+            <span class="emoji"></span>
+            <h3>Edición Rubí</h3>
+        </div>
+        <div class="card emerald" onclick="location.href='jugar.html?game=emerald'">
+            <span class="emoji"></span>
+            <h3>Edición Esmeralda</h3>
+        </div>
+        <div class="card firered" onclick="location.href='jugar.html?game=rojo_fuego'">
+            <span class="emoji"></span>
+            <h3>Rojo Fuego</h3>
+        </div>
+        <div class="card leafgreen" onclick="location.href='jugar.html?game=verde_hoja'">
+            <span class="emoji"></span>
+            <h3>Verde Hoja</h3>
+        </div>
+    </div>
+</body>
+</html>
